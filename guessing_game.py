@@ -15,9 +15,9 @@ def start_game():
 	num_guesses = 0
 	random_num = random.randint(1, 10)
 	print(random_num)
+	if highscore:
+			print("The highscore is {}, can you beat it?".format(highscore))
 	while True:
-		if highscore:
-			print("The highscore is {}, can you beat it?".format(highscore))		
 		try:
 			guess = int(input("Guess a number between 1 and 10:  "))
 			if type(guess) != int:
