@@ -40,7 +40,7 @@ def start_game():
 				if cont.lower() == 'yes':
 					start_game()
 				else:
-					print("\nThat's the end of the game, thanks for playing!")	
+					print("\nThat's the end of the game, thanks for playing!\n")	
 				break
 			elif guess < random_num:
 				num_guesses += 1
