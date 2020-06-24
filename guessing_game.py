@@ -14,7 +14,6 @@ def start_game():
 ----------------------------------------\n""")
 	num_guesses = 0
 	random_num = random.randint(1, 10)
-	print(random_num)
 	if highscore:
 			print("The highscore is {}, can you beat it?".format(highscore))
 	while True:
