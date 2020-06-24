@@ -31,7 +31,7 @@ def start_game():
 		else:
 			if guess == random_num:
 				num_guesses += 1
-				print("Good job, you got it! The number was {} and it only took you {} guesses.".format(random_num, num_guesses))
+				print("\nGood job, you got it! The number was {} and it only took you {} guesses.\n".format(random_num, num_guesses))
 				global attempts
 				attempts.append(num_guesses)
 				# global highscore 
