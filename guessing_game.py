@@ -34,7 +34,6 @@ def start_game():
 				print("\nGood job, you got it! The number was {} and it only took you {} guesses.\n".format(random_num, num_guesses))
 				global attempts
 				attempts.append(num_guesses)
-				# global highscore 
 				highscore = min(attempts)
 				cont = input("Would you like to play again? (yes/no)  ")
 				if cont.lower() == 'yes':
