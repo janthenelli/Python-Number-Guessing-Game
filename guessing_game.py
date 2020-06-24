@@ -14,6 +14,7 @@ def start_game():
 ----------------------------------------\n""")
 	num_guesses = 0
 	random_num = random.randint(1, 10)
+	global highscore
 	if highscore:
 			print("The highscore is {}, can you beat it?".format(highscore))
 	while True:
@@ -33,9 +34,9 @@ def start_game():
 				print("Good job, you got it! The number was {} and it only took you {} guesses.".format(random_num, num_guesses))
 				global attempts
 				attempts.append(num_guesses)
-				global highscore 
+				# global highscore 
 				highscore = min(attempts)
-				cont = raw_input("Would you like to play again? (yes/no)  ")
+				cont = input("Would you like to play again? (yes/no)  ")
 				if cont.lower() == 'yes':
 					start_game()
 				else:
